@@ -1,4 +1,5 @@
-## download
+<dl>
+<dt> download </dt>
 openjdk   : 무료
 - https://jdk.java.net/java-se-ri/8
 - https://github.com/ojdkbuild/ojdkbuild
@@ -6,7 +7,7 @@ openjdk   : 무료
 - eclipse : google에서 eclipse download 검색
 
 
-## 자바 동작원리
+<dt> 자바 동작원리 </dt>
 - one source multiuse
   하나의 소스를 만들면 플랫폼에 상관없이 똑같은 결과를 얻을 수 있다.
 - 플랫폼(Operating System, os) 독립적인 프로그래밍
@@ -51,7 +52,7 @@ jre를 설치하면 jvm은 자동으로 설치가 되고, java를 개발하고 �
 
 
 ## 주석 
- // : 한줄 주석
+ '//' : 한줄 주석
  /* */ : 여러줄 주석
  /** */ : API Document 만들때 사용되는 주석
 
