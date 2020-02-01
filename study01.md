@@ -118,21 +118,21 @@ jre를 설치하면 jvm은 자동으로 설치가 되고, java를 개발하고 �
 
 ## method
 - 데이터를 가지고 어떤 로직을 만들어서 데이터를 출력하거나 넣을때 사용
-```
 - return O 
-       int count (){
-          int cup = 1000/100;
-          return cup;
-       }
-
-       int count (){
-          return 1;
-       }
-
-- return X  
-void isSarangOk(){
-          System.out.println("...");
-       }
+```
+   int count (){
+      int cup = 1000/100;
+         return cup;
+    }
+      int count (){
+        return 1;
+    }
+```
+- return X 
+```
+  void isSarangOk(){
+     System.out.println("...");
+     }
 
 ```
 
