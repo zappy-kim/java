@@ -1,5 +1,5 @@
 
-## download
+## Download
 openjdk   : 무료
 - https://jdk.java.net/java-se-ri/8
 - https://github.com/ojdkbuild/ojdkbuild
