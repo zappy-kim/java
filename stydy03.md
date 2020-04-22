@@ -102,13 +102,12 @@
 # 반복문 do ~ while
   - do에 있는 문장은 반드시 한번 실행되고, while에 있는 조건을 만족할 동안 do안에 있는 문장을
     반복실행한다. 
-    
-    ```java
-  - do {
+```java
+  do {
   	  Scanner scanner = new Scanner();
   	  scanner.nextInt();
   	}while(i < 10); 
-    ```
+```
 
 # 배열
   - 같은 타입의 나열
@@ -117,29 +116,31 @@
   - 배열은 index 번호를 가지고 접근해서 데이터를 가져오거나 넣을 수 있다. 
   - 배열 사용방법
   
-  ```java
-  1) int[ ] a;           // 배열선언 
-     a = new int[5];     // 배열생성
-     a[0] =1; a[1] =2; a[2] =3;  //배열 값 입력
-  2) int[] a = new int [] {1,2,3,4,5};
-  3) int[] a = {1,2,3,4,5;}
-    ```
+```java
+	1) int[ ] a;           // 배열선언 
+	a = new int[5];     // 배열생성
+	a[0] =1; a[1] =2; a[2] =3;  //배열 값 입력
+	2) int[] a = new int [] {1,2,3,4,5};
+	3) int[] a = {1,2,3,4,5;}
+```
 
-  - 배열의 길이를 구할때는 length를 사용한다.
-  ```java
+- 배열의 길이를 구할때는 length를 사용한다.
+  
+```java
 - 2차원 배열 int[][] a = new int [5][5];
 - 3차원 배열 int[][][] a = new int [5][5][5];
-  ```
+```
 
 # enhanced for 
   - iterator pattern
   - 값을 꺼낼때만 사용(*)
   - 값을 넣을때 사용하면 오류가 발생할 수 있다. 
   
-  ```java
-  - for(type 변수 : array or collection 형태의 변수) {
-  			System.out.print(a);
-  	}```
+```java
+- for(type 변수 : array or collection 형태의 변수) {
+		System.out.print(a);
+}
+```
 
 # break/continue
   - break : 나를 감싸고 있는 가장 가까운 반복문 하나를 빠져나오는 키워드
@@ -151,34 +152,34 @@
   - count-- : count = count -1;
   
 ```java
-  - int count = 0;
-    count++; // count = 0;
-             // count = 1; (후연산자/실행 시점 이후 증가)
-  - int count = 0;
-    ++count; // count = 1;
-             // count = 1; (전연산자/실행시점 증가)
+- int count = 0;
+count++; // count = 0;
+     // count = 1; (후연산자/실행 시점 이후 증가)
+- int count = 0;
+++count; // count = 1;
+     // count = 1; (전연산자/실행시점 증가)
 ```
 # shallow copy vs deep copy
-```java
-  - shallow copy(얕은 복사) -> 값이 변경
-		int[ ] a = {1, 2, 3, 4, 5};
-		int[ ] c = new int [5];
-		
-		c = a; // shallow copy
-		a[2] = 100; 
-		for ( int i : c ) {
-			System.out.println( i + ",");
-		}
-    ```
+- shallow copy(얕은 복사) -> 값이 변경
 
+```java
+	int[ ] a = {1, 2, 3, 4, 5};
+	int[ ] c = new int [5];
+
+	c = a; // shallow copy
+	a[2] = 100; 
+	for ( int i : c ) {
+		System.out.println( i + ",");
+	}
+```
   - deep copy(깊은 복사) -> 값이 변경되지 않음
   
-  ```java
-  	int [ ] a1 = {1,2,3,4,5};
-		int [ ] c1 = new int [5];
-		
-		// a1 값들을 c1에 공간에 다 복사해 넣어라. 
-		System.arraycopy(a1, 0, c1, 0, a1.length);
-		a1[2] = 100;
-		System.out.println(c1[2]);
+```java
+int [ ] a1 = {1,2,3,4,5};
+	int [ ] c1 = new int [5];
+
+	// a1 값들을 c1에 공간에 다 복사해 넣어라. 
+	System.arraycopy(a1, 0, c1, 0, a1.length);
+	a1[2] = 100;
+	System.out.println(c1[2]);
 ```
